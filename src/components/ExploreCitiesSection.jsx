@@ -101,7 +101,9 @@ export const ExploreCitiesSection = () => {
 
                 {/* City Name Overlay */}
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold mb-1">{city.name}</h3>
+                  <h3 className="text-xl font-bold mb-1 text-white">
+                    {city.name}
+                  </h3>
                   <div className="flex items-center text-sm opacity-90">
                     <MapPin className="h-3 w-3 mr-1" />
                     <span>{city.state}</span>
