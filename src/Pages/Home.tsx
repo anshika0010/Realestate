@@ -4,7 +4,7 @@ import { Hero } from "../components/Hero";
 import { ServicesSection } from "../components/ServicesSection";
 import { FeaturedProperties } from "../components/FeaturedProperties";
 import { TestimonialsSection } from "../components/TestimonialsSection";
-import { AgentsSection } from "../components/AgentsSection";
+import { AgentsSection } from "../components/agentsSection";
 import { CtaSection } from "../components/CtaSection";
 import { Footer } from "../components/Footer";
 import { SellingOptionsSection } from "../components/SellingOption";
