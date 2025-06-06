@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@theme {
+  --colors-coral-50: #fff5f5;
+  --color-coral-500: #ff6b6b;
+  --color-coral-600: #e55b5b;
+  --navy-800: #1e293b;
+  --navy-900: #0b1d3a;
+}
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+*,
+body {
+  font-family: system-ui, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color:  */
+}
+.bt-primary {
+  background-color: var(--coral-500);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bt-primary:hover {
+  background-color: var(--coral-600);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--navy-900);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500; /* equivalent to font-medium */
+  letter-spacing: -0.025em; /* equivalent to tracking-tight in Tailwind */
+}
+@layer utilities {
+  .text-coral-500 {
+    color: var(--color-coral-500);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-in-out;
+}
+.bt-primary {
+  @apply bg-coral-500 text-white hover:bg-coral-600 focus:ring-coral-500;
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+.animate-slide-up {
+  @apply animate-[slideUp_0.6s_ease-in-out];
+}
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+.container-custom {
+  @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply bg-coral-500 text-white hover:bg-coral-600 focus:ring-coral-500;
+}
+
+.btn-outline {
+  @apply border border-gray-300 bg-white text-gray-800 hover:bg-gray-50 focus:ring-gray-300;
+}
+
+.card {
+  @apply overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-300 hover:shadow-md;
+}
+
+.animate-fade-in {
+  @apply animate-[fadeIn_0.5s_ease-in-out];
+}
