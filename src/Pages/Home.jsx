@@ -4,7 +4,7 @@ import { Hero } from "../components/Hero";
 import { ServicesSection } from "../components/ServicesSection";
 // import { TestimonialsSection } from "../components/TestimonialsSection";
 import { SellingOptionsSection } from "../components/SellingOption";
-// import { CtaSection } from "../components/CtaSection";
+import { CtaSection } from "../components/CtaSection";
 import Banner from "../components/Banner";
 import { ExploreCitiesSection } from "../components/ExploreCitiesSection";
 import AgentsSection from "../components/agentsSection";
@@ -26,7 +26,7 @@ const Home = () => {
         <SellingOptionsSection />
 
         <AgentsSection />
-        {/* <CtaSection /> */}
+        <CtaSection />
       </main>
       <Foote />
     </>
