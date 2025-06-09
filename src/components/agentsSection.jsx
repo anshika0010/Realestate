@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Phone, Mail, Instagram, Facebook, Twitter } from "lucide-react";
 
@@ -65,7 +64,7 @@ const agents = [
   },
 ];
 
-export const AgentsSection = () => {
+const AgentsSection = () => {
   return (
     <section className="py-16 md:py-24">
       <div className="container-custom">
@@ -150,3 +149,4 @@ export const AgentsSection = () => {
     </section>
   );
 };
+export default AgentsSection;

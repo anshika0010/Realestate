@@ -1,8 +1,7 @@
-"use client";
 import React from "react";
 import { Home, ArrowRight, MapPin } from "lucide-react";
 
-export const CtaSection = () => {
+const CtaSection = () => {
   return (
     <section className="py-16 md:py-24 bg-navy-50">
       <div className="container-custom">
@@ -135,3 +134,5 @@ export const CtaSection = () => {
     </section>
   );
 };
+
+export default CtaSection;
