@@ -75,7 +75,7 @@ const PropertyCard = ({ property }) => {
         <div className="flex items-center justify-between mt-4">
           <div>
             <span className="text-xl font-bold text-navy-900">
-              ${property.price.toLocaleString()}
+              ₹{property.price.toLocaleString()}
             </span>
             {property.status === "For Rent" && (
               <span className="text-gray-600 text-sm">/month</span>

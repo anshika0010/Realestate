@@ -118,9 +118,9 @@ const Foote = () => {
                 <li className="flex items-start">
                   <MapPin className="h-5 w-5 text-coral-500 mr-3 mt-0.5" />
                   <span className="text-gray-300">
-                    1234 Main Street, Suite 100
+                    Sector 16, Noida,
                     <br />
-                    New York, NY 10001
+                    Uttar-Pradesh India - 201301
                   </span>
                 </li>
                 <li className="flex items-center">
@@ -178,7 +178,8 @@ const Foote = () => {
           <div className="border-t border-white/10 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm mb-4 md:mb-0">
-                &copy; {new Date().getFullYear()} Realton. All rights reserved.
+                &copy; {new Date().getFullYear()} Dream and Innovation. All
+                rights reserved.
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400">
